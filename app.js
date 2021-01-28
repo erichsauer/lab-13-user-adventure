@@ -20,4 +20,5 @@ homeForm.addEventListener('submit', (e) => {
     };
 
     setToLocalStorage(QUESTER, newQuester);
+    window.location.href = './map';
 });
