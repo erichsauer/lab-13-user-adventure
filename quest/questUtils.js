@@ -38,11 +38,7 @@ export function generateForm(currentQuest) {
         const selectionId = formData.get('choice');
         const choice = findById(currentQuest.choices, selectionId);
         
-        user.hp += choice.hp;
-        user.gold += choice.gold;
-        user.completed[currentQuest.id] = true;
-        
-        setToLocalStorage(QUESTER, user);
+        updateUserStats(user, choice, currentQuest);
         
         choiceResultDiv.textContent = choice.result;
         inputForm.textContent = '';
@@ -54,4 +50,12 @@ export function generateForm(currentQuest) {
 
         choiceResultDiv.append(backToMap);
     });
+}
+
+export function updateUserStats(user, choice, currentQuest) {
+    user.hp += choice.hp;
+    user.gold += choice.gold;
+    user.completed[currentQuest.id] = true;
+    
+    setToLocalStorage(QUESTER, user);
 }

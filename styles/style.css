@@ -135,3 +135,11 @@ footer {
       display: block;
       margin-bottom: 30px;
   }
+
+  button {
+      display: block;
+  }
+
+  section {
+      text-align: center;
+  }
