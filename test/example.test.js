@@ -1,16 +1,15 @@
-// IMPORT MODULES under test here:
-// import { example } from '../example.js';
+import { setNewQuester } from '../utils.js';
 
 const test = QUnit.test;
 
-test('time to test a function', (expect) => {
+test('function should take in a form bundle and set new adventurer to localStorage', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = true;
+    const expected = JSON.parse(localStorage.getItem('QUESTER'));
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = false;
+    const actual = setNewQuester(formData);
 
     //Expect
     // Make assertions about what is expected versus the actual result

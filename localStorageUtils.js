@@ -3,5 +3,6 @@ export function setToLocalStorage(magicString, array) {
 }
 
 export function getFromLocalStorage(magicString) {
-    return JSON.parse(localStorage.getItem(magicString));
+    return JSON.parse(localStorage.getItem(magicString)
+    );
 }

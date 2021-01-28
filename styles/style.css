@@ -117,3 +117,21 @@ footer {
     }
 
   }
+
+  label>img {
+    width: 100px;
+    display: block;
+  }
+
+  input:checked + img {
+    border: solid 3px red
+  }
+
+  label>input {
+      display: none;
+  }
+
+  label {
+      display: block;
+      margin-bottom: 30px;
+  }

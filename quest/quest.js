@@ -1,7 +1,7 @@
 // import functions and grab DOM elements
 import { findById } from '../utils.js';
 import quests from '../data.js';
-import { generateForm } from './quest-utils.js';
+import { generateForm } from './questUtils.js';
 
 const questTitle = document.querySelector('h2');
 const questImage = document.querySelector('section>img');
