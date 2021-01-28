@@ -1,13 +1,15 @@
 # Adventure Quest
 
-1) Home
+<!-- 1) Home
 HTML Setup: Form for user data
+- form with name input and three options
+
 On submit:
 - Store the user data in local storage
-- Redirect the user to map/list
+- Redirect the user to map/list -->
 
-2) Map/List
-HTML Setup: ul to inject quests into
+<!-- 2) Map/List
+HTML Setup: ul to inject quests into -->
 - Before anything, if all quests are completed, redirect to results page
 - If the user has <= 0 HP, redirect them to the results page
 - Otherwise, grab quest data
