@@ -1,1 +1,4 @@
-/* add home page styles here */
+body {
+    background-image: url(../assets/background-gnome.jpg);
+    background-size: cover;
+}
