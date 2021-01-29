@@ -1,17 +1,11 @@
 
 body {
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
-    /* --color1: hsla(349, 69%, 76%, 1);
-    --color2: hsla(207, 67%, 44%, 1);
-    --color3: hsla(200, 61%, 56%, 1);
-    --color4: hsla(187, 41%, 94%, 1);
-    --color5: hsla(170, 28%, 95%, 1); */
-/* 
-    /* --color1: hsla(45, 86%, 83%, 1);
-    --color2: hsla(135, 65%, 98%, 1);
-    --color3: hsla(315, 37%, 86%, 1);
-    --color4: hsla(45, 73%, 98%, 1);
-    --color5: hsla(224, 40%, 79%, 1); */
+    --color1: white;
+    --color2: white;
+    --color3:  aquamarine;
+    --color4: white;
+    --color5: white;
     
     --header-height: 80px;
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
@@ -28,6 +22,7 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    margin-top: 40px;
 }
 
 section {
@@ -47,7 +42,12 @@ section {
 
 header {
     display: flex;
+    position: fixed;
+    top: 0%;
     justify-content: flex-end;
+    align-items: center;
+    font-size: 1rem;
+    width: 100%;
     background-color: var(--color3);
     height: var(--header-height);
     box-shadow: var(--shadow);
@@ -58,12 +58,14 @@ footer {
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
+    color: white;
 }
 
 
 h2 {
     font-size: 1.8rem;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .gutter-right {
@@ -77,8 +79,6 @@ h2 {
 header img {
     height: var(--header-height);
 }
-
-
 
 content {
     width: 80%;
@@ -121,25 +121,66 @@ footer {
   label>img {
     width: 100px;
     display: block;
+    border-radius: 50px;
+    border: solid white 2px;
+    margin-top: 5px
   }
 
   input:checked + img {
-    border: solid 3px red
+    box-shadow: violet 5px 5px;
   }
 
   label>input {
-      display: none;
+    display: none;
   }
 
   label {
-      display: block;
-      margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-family: cursive;
+    max-width: 150px;
   }
 
   button {
-      display: block;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5px;
+    background-color: lavenderblush;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    color: violet;
+    box-shadow: violet 5px 5px;
+    border: solid white 2px;
+  }
+
+  button:active {
+    box-shadow: none;
   }
 
   section {
-      text-align: center;
+    text-align: center;
+  }
+
+  form>input {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5px;
+    background-color: lavenderblush;
+    color: violet;
+    width: 150px;
+    height: 50px;
+    border-radius: 0px;
+    border: solid white 2px;
+  }
+
+  form {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
   }
