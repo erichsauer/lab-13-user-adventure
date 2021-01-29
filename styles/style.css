@@ -3,7 +3,7 @@ body {
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
     --color1: white;
     --color2: white;
-    --color3:  aquamarine;
+    --color3:  darkgreen;
     --color4: white;
     --color5: white;
     
@@ -14,7 +14,7 @@ body {
     
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
-}
+    }
 
 main {
     display: flex;
@@ -140,9 +140,10 @@ footer {
     align-items: center;
     margin-bottom: 30px;
     margin-top: 10px;
-    font-size: 1rem;
-    font-family: cursive;
+    font-size: 1.25rem;
+    font-family: 'Crimson Text', serif;
     max-width: 150px;
+  
   }
 
   button {
@@ -150,6 +151,7 @@ footer {
     text-align: center;
     padding: 5px;
     background-color: lavenderblush;
+    min-width: 100px;
     width: 100px;
     height: 100px;
     border-radius: 50px;
@@ -164,6 +166,9 @@ footer {
 
   section {
     text-align: center;
+    background-color: rgba(255, 255, 255, .65);
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   form>input {
@@ -173,6 +178,7 @@ footer {
     background-color: lavenderblush;
     color: violet;
     width: 150px;
+    min-width: 150px;
     height: 50px;
     border-radius: 0px;
     border: solid white 2px;
@@ -181,6 +187,12 @@ footer {
   form {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+  }
+
+  p {
+    font-size: 2rem;
+    font-family: 'Niconne', cursive;
+
   }

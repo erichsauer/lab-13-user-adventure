@@ -2,6 +2,7 @@
 import questData from '../data.js';
 import { getFromLocalStorage } from '../localStorageUtils.js';
 import { QUESTER } from '../magicStrings.js';
+import { updateHeaderStats } from '../header.js';
 
 const ul = document.querySelector('ul');
 const user = getFromLocalStorage(QUESTER);
@@ -9,6 +10,8 @@ const user = getFromLocalStorage(QUESTER);
 let completedAllQuests = true;
 
 // set event listeners to update state and DOM
+updateHeaderStats();
+
 for (const quest of questData) {
     if (!user.completed[quest.id]) {
         completedAllQuests = false;

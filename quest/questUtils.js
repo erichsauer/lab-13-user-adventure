@@ -1,3 +1,4 @@
+import { updateHeaderStats } from '../header.js';
 import { getFromLocalStorage, setToLocalStorage } from '../localStorageUtils.js';
 import { QUESTER } from '../magicStrings.js';
 import { findById } from '../utils.js';
@@ -40,6 +41,8 @@ export function generateForm(currentQuest) {
         
         updateUserStats(user, choice, currentQuest);
         
+        updateHeaderStats();
+
         choiceResultDiv.textContent = choice.result;
         inputForm.textContent = '';
         backToMap.textContent = 'Back to map!';
@@ -52,6 +55,7 @@ export function generateForm(currentQuest) {
     });
 }
 
+// this is only here because I needed to write a test for it
 export function updateUserStats(user, choice, currentQuest) {
     user.hp += choice.hp;
     user.gold += choice.gold;

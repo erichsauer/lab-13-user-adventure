@@ -7,7 +7,6 @@ homeForm.addEventListener('submit', (e) => {
     e.preventDefault();
     // create form bundle
     const formData = new FormData(homeForm);
-    console.log(homeForm);
     setNewQuester(formData);
     // redirect to map
     window.location.href = './map';

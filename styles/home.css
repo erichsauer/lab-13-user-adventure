@@ -2,3 +2,20 @@
 input {
     display: block;
 }
+
+header {
+    font-family: 'Rye', cursive;
+    font-size: 5rem;
+    justify-content: center;
+    height: 150px;
+    color: white;
+}
+
+main {
+    margin-top: 100px
+}
+
+body {
+    background-image: url(../assets/background.jpg);
+    background-size: cover;
+}
